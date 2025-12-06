@@ -138,7 +138,7 @@ public final class CraftLabsX extends JavaPlugin {
         bindCommand("shop", new ShopCommand(economyManager, configManager), new ShopTabCompleter());
         bindCommand("sell", new SellCommand(economyManager, configManager), new SellTabCompleter());
         bindCommand("sellmulti", new SellMultiplierCommand(economyManager, configManager), new SellMultiplierTabCompleter());
-        bindCommand("money", new MoneyCommand(), new MoneyTabCompleter());
+        bindCommand("money", new MoneyCommand() ,  new MoneyTabCompleter());
         bindCommand("bal", new BalCommand(), new BalTabCompleter());
         bindCommand("baltop", new BaltopCommand(), new BaltopTabCompleter());
         bindCommand("moneyadmin", new AdminMoneyCommand(economyManager), new AdminMoneyTabCompleter());
