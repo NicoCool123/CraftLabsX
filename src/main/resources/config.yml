@@ -1,0 +1,24 @@
+enabled-servers:
+  - lobby
+
+servers:
+  lobby:
+    block: NETHER_STAR
+    slot: 11
+  SMP:
+    block: GRASS_BLOCK
+    slot: 15
+
+database:
+  type: sqlite
+  host: localhost
+  port: 3306
+  name: craftlabsx
+  user: root
+  password: password
+
+economy:
+  auction_expiry_hours: 72
+  order_expiry_hours: 168
+  max_auctions_per_player: 10
+  max_orders_per_player: 5

@@ -1,0 +1,130 @@
+name: CraftLabsX
+version: 1.0
+main: CraftLabsX.CraftLabsX
+api-version: 1.20
+author: YourName
+commands:
+  craftlabsx:
+    description: Opens the server selector or related features.
+    usage: /craftlabsx serverselector
+    permission: craftlabsx.use
+  shardshop:
+    description: Opens the shard shop to buy upgrades.
+    usage: /shardshop
+    permission: shardshop.use
+  shards:
+    description: Manage player shards (admin command).
+    usage: /shards <add|remove|set|get> <player> [amount]
+    permission: shards.manage
+  doublejump:
+    description: Toggles your personal double jump ability.
+    usage: /doublejump
+    permission: doublejump.toggle
+  cookieclicker:
+    description: Opens the Cookie Clicker game GUI
+    usage: /cookieclicker
+  advancement:
+    description: Opens your personal Advancements GUI
+    usage: /advancement
+  tempban:
+    description: Temporarily ban a player
+    usage: /tempban <player> <time> <reason>
+  permaban:
+    description: Permanently ban a player
+    usage: /permban <player> <reason>
+  tempipban:
+    description: Temporarily ban an IP
+    usage: /tempipban <ip> <time> <reason>
+  permipban:
+    description: Permanently ban an IP
+    usage: /permipban <ip> <reason>
+  unban:
+  ah:
+    description: Auction house for buying and selling items
+    usage: /ah [sell <price>|my]
+    permission: economy.auction
+    aliases: [auction, auctionhouse]
+  order:
+    description: Create and browse buy orders
+    usage: /order [create <amount> <price>|my]
+    permission: economy.order
+    aliases: [buyorder]
+  shop:
+    description: Server shop with configurable items
+    usage: /shop
+    permission: economy.shop
+  sell:
+    description: Sell items for money
+    usage: /sell [hand|all]
+    permission: economy.sell
+  sellmulti:
+    description: View and manage sell multipliers
+    usage: /sellmulti [set <player> <multiplier>]
+    permission: economy.sellmulti.view
+    aliases: [sm]
+  money:
+    description: View balance and send money
+    usage: /money [pay <player> <amount>]
+    permission: economy.money
+  bal:
+    description: Check your balance
+    usage: /bal [player]
+    permission: economy.balance
+    aliases: [balance]
+  baltop:
+    description: View the richest players
+    usage: /baltop [page]
+    permission: economy.baltop
+  moneyadmin:
+    description: Admin money management
+    usage: /moneyadmin <give|take|set> <player> <amount>
+    permission: economy.admin
+
+permissions:
+  craftlabsx.use:
+    description: Allows use of the CraftLabsX main command.
+    default: true
+  shardshop.use:
+    description: Allows players to open the shard shop.
+    default: true
+  doublejump.use:
+    description: Allows double jump without feather.
+    default: false
+  doublejump.toggle:
+    description: Allows toggling of personal double jump.
+    default: true
+  shards.manage:
+    description: Allows shard administration.
+    default: op
+  economy.auction:
+    description: Allows use of auction house
+    default: true
+  economy.order:
+    description: Allows creating and browsing buy orders
+    default: true
+  economy.shop:
+    description: Allows access to server shop
+    default: true
+  economy.sell:
+    description: Allows selling items
+    default: true
+  economy.sellmulti.view:
+    description: Allows viewing sell multiplier
+    default: true
+  economy.sellmulti.admin:
+    description: Allows managing player sell multipliers
+    default: op
+  economy.money:
+    description: Allows money commands
+    default: true
+  economy.balance:
+    description: Allows checking balance
+    default: true
+  economy.baltop:
+    description: Allows viewing baltop
+    default: true
+  economy.admin:
+    description: Allows admin money commands
+    default: op
+
+depend: [Vault]

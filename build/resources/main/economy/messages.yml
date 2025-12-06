@@ -1,0 +1,47 @@
+prefix: "&8[&6Economy&8]&r "
+
+auction:
+  listed: "{prefix}&aListed {item} for {price}!"
+  purchased: "{prefix}&aYou bought {item} for {price}!"
+  sold: "{prefix}&aYour {item} sold for {price}!"
+  expired: "{prefix}&cYour auction for {item} expired!"
+  no_item: "{prefix}&cYou must hold an item to auction!"
+  invalid_price: "{prefix}&cInvalid price! Use: 100, 1k, 1m, etc."
+  limit_reached: "{prefix}&cYou have reached the maximum auction limit!"
+  not_found: "{prefix}&cAuction not found or already sold!"
+  own_auction: "{prefix}&cYou cannot buy your own auction!"
+
+order:
+  created: "{prefix}&aCreated buy order for {amount}x {item} at {price} each!"
+  fulfilled: "{prefix}&aYou fulfilled an order and received {total}!"
+  purchased: "{prefix}&aYour buy order was fulfilled!"
+  cancelled: "{prefix}&cOrder cancelled."
+  expired: "{prefix}&cYour buy order for {item} expired!"
+  no_item: "{prefix}&cYou must hold an item to create an order!"
+  invalid_amount: "{prefix}&cInvalid amount!"
+  limit_reached: "{prefix}&cYou have reached the maximum order limit!"
+  not_found: "{prefix}&cOrder not found or already fulfilled!"
+  insufficient_items: "{prefix}&cYou don't have enough items to fulfill this order!"
+
+shop:
+  purchased: "{prefix}&aYou bought {amount}x {item} for {price}!"
+  no_space: "{prefix}&cYour inventory is full!"
+
+sell:
+  success: "{prefix}&aSold {amount}x {item} for {total} (&7base: {base} &8x &e{multiplier}x&a)"
+  success_all: "{prefix}&aSold items for {total} (&e{multiplier}x &amultiplier applied)"
+  no_price: "{prefix}&c{item} cannot be sold!"
+  no_item: "{prefix}&cYou must hold an item to sell!"
+  no_sellable: "{prefix}&cYou have no sellable items in your inventory!"
+
+multiplier:
+  set: "{prefix}&aSet {player}'s sell multiplier to &e{multiplier}x"
+  view: "&aYour sell multiplier: &e{multiplier}x"
+
+errors:
+  insufficient_funds: "{prefix}&cYou need {amount}!"
+  no_permission: "{prefix}&cYou don't have permission!"
+  player_not_found: "{prefix}&cPlayer not found!"
+  invalid_number: "{prefix}&cInvalid number format!"
+  generic: "{prefix}&cAn error occurred. Please try again."
+  database: "{prefix}&cDatabase error. Please contact an administrator."

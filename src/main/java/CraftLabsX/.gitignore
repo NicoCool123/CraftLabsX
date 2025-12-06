@@ -1,0 +1,20 @@
+# IntelliJ
+.idea/
+*.iml
+out/
+
+# Gradle
+.gradle/
+build/
+
+# Maven
+target/
+
+# Logs, cache, temporary files
+*.log
+*.tmp
+
+# Minecraft / Spigot / Paper servers
+plugins/
+server/
+cache/
