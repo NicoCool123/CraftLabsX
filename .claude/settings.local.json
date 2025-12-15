@@ -4,7 +4,9 @@
       "Bash(wc:*)",
       "Bash(mvn clean package:*)",
       "Bash(./gradlew build:*)",
-      "Bash(gradle build:*)"
+      "Bash(gradle build:*)",
+      "Bash(javac:*)",
+      "Bash(find:*)"
     ],
     "deny": [],
     "ask": []

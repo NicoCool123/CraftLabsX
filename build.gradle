@@ -22,11 +22,32 @@ repositories {
     }
 }
 dependencies {
+    // Paper API and plugin dependencies
     compileOnly("io.papermc.paper:paper-api:1.21.10-R0.1-SNAPSHOT")
     compileOnly("me.clip:placeholderapi:2.11.5")
     compileOnly("com.github.MilkBowl:VaultAPI:1.7") {
         exclude group: "org.bukkit", module: "bukkit"
     }
+
+    // Database drivers (CRITICAL FIX - were missing)
+    implementation("org.xerial:sqlite-jdbc:3.45.0.0")
+    implementation("com.mysql:mysql-connector-j:8.2.0")
+
+    // Connection pooling for database performance
+    implementation("com.zaxxer:HikariCP:5.1.0")
+
+    // Database migrations
+    implementation("org.flywaydb:flyway-core:10.4.1")
+    implementation("org.flywaydb:flyway-mysql:10.4.1")
+
+    // Dependency injection
+    implementation("com.google.inject:guice:7.0.0")
+
+    // Logging (SLF4J API - Paper provides implementation)
+    compileOnly("org.slf4j:slf4j-api:2.0.9")
+
+    // JSON serialization for complex data
+    implementation("com.google.code.gson:gson:2.10.1")
 }
 
 
